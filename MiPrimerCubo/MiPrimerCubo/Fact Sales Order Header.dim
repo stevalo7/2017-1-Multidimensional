@@ -1,0 +1,160 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a57266c0-f9bd-4308-b4f8-f8421d277967" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Sales Order Header</ID>
+  <Name>Fact Sales Order Header</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="22e8af54-accb-4982-b7cd-71f15ca50a98">
+    <DataSourceViewID>My Db</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ae0021e8-b1d7-44b1-b1ec-5a68213c3b15">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="fadaf084-f291-4c07-a279-f1946adbca60">
+      <ID>Sales Order ID</ID>
+      <Name>Sales Order ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ddcaa6fc-46d0-4e7d-ab84-ec94a4f5d907">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12a96e4e-171a-4658-b7ee-b8f44e896780">
+            <TableID>Facts_FactSalesOrderHeader</TableID>
+            <ColumnID>SalesOrderID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2f745cf4-3851-425e-936c-3b4365093a98">
+          <AttributeID>Estratificacion Sub Total</AttributeID>
+          <Name>Estratificacion Sub Total</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="006accd6-4c8c-4467-84d4-5097a6623cca">
+          <AttributeID>Estratificacion Tax</AttributeID>
+          <Name>Estratificacion Tax</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98fc98e1-81da-4311-a651-605ff04f369a">
+          <AttributeID>Estratificacion Freight</AttributeID>
+          <Name>Estratificacion Freight</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0cbdc1c6-9221-4f4c-998a-b7de6bf82eec">
+          <AttributeID>Estratificacion Total</AttributeID>
+          <Name>Estratificacion Total</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="83a1297b-9cba-4d69-980f-a5c765d73f97">
+      <ID>Estratificacion Sub Total</ID>
+      <Name>Estratificacion Sub Total</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66abac92-46a8-41cb-8c0a-35fcd82d0143">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64d4b3bf-029f-4af0-9a5b-a60d40eb2f30">
+            <TableID>Facts_FactSalesOrderHeader</TableID>
+            <ColumnID>EstratificacionSubTotal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a1177e4d-9c75-423f-bee8-10db466d062b">
+      <ID>Estratificacion Tax</ID>
+      <Name>Estratificacion Tax</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5e459976-20d1-47ea-82c6-a4bd804734e0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f386686d-177a-4021-afe4-d4ca59be30dc">
+            <TableID>Facts_FactSalesOrderHeader</TableID>
+            <ColumnID>EstratificacionTax</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="678211a7-cafa-4d62-a439-2ac2e1ac57e8">
+      <ID>Estratificacion Freight</ID>
+      <Name>Estratificacion Freight</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc49950b-7250-4242-9f12-ae86e4472c5a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d49b0dd-318c-4de4-bf87-208a4d1003d4">
+            <TableID>Facts_FactSalesOrderHeader</TableID>
+            <ColumnID>EstratificacionFreight</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc492b7a-dc57-4f79-a59d-9ce1046fc6bf">
+      <ID>Estratificacion Total</ID>
+      <Name>Estratificacion Total</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80a1dfb1-fca3-4c34-906c-88f6f2d8cb76">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fab5fedd-8253-4248-9ed3-58b9ee435a6c">
+            <TableID>Facts_FactSalesOrderHeader</TableID>
+            <ColumnID>EstratificacionTotal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

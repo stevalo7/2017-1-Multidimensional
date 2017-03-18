@@ -24,8 +24,12 @@
       <FullPath>Customers.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dims Estratificacion.dim</Name>
-      <FullPath>Dims Estratificacion.dim</FullPath>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Sales Order Header.dim</Name>
+      <FullPath>Fact Sales Order Header.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
