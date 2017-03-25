@@ -1,0 +1,51 @@
+modelaje
+	- transaccional aka oltp
+		- Create Update Delete
+		- oracle - mysql - sql server
+	- multidimensional aka olap
+		- Select
+		- oracle - analysis services
+- tipos de tabla
+	- fact
+		- campos que sean agrupables aka measures
+		- campos de fk - dim
+	- dim
+		- pk
+		- descripción que sean agrupables 
+			+ hierarchies
+			+ ejemplo
+				- pais
+				- provincia
+				- cantón
+				- distrito
+				- nombre del artículo - empleado - tienda - cliente
+		- hierarchies
+		- tipos
+			- fecha
+			- ad hoc aka estratificación
+			- table based
+
+- visual studio
+	- analysis services
+	- data source
+		+ bd y fuentes
+	- data source view
+		+ core
+		+ named queries
+		+ calculated columns
+		+ joins entre fact y dim
+	- cube
+		+ calculated measures
+		+ conditional formatting
+		+ dimension mapping
+			+ link entre fact y dim del dsv
+		+ browser
+	- dimension
+		+ hierarchies
+		+ browser
+	
+	
+	
+	
+	
+	
