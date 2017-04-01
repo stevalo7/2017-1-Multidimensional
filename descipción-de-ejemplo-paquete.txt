@@ -1,0 +1,5 @@
+haga un paquete que muestre un mensaje de texto que diga:
+Feliz día XX
+donde XX es el día del mes en que se está ejecutando el paquete
+para obtener el día del mes, utilice un llamado la base de datos sql server
+para desplegar el mensaje de texto, utilice un componente script task
