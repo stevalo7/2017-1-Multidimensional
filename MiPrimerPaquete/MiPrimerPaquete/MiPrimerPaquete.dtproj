@@ -26,13 +26,14 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LAB09-PROFESOR</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAc4JOwZu8T06WRyJGDmbepwAAAAACAAAAAAADZgAAwAAAABAAAAArmR8XWHdzsmyUPtvPnkTDAAAAAASAAACgAAAAEAAAALhbr71dXPKBVZkcu9i6qyaIAAAAO6EPJ9EW80WQPEoAh+At21XHjvkwIRwhryHX8QPnMAvRJrrPN1Ets9QwkvyUwwoGOXwKtVslQJnHwY5kZKai4QaYE1A9IgCFn+PpLMQpiEu20SaRVwIPYSn1ct9WesOM/QbuShO6R5bn0mr3b3bW3xs5nlZnT83T9vecNkqJWZbLNSr+SLPukBQAAAAiOczwrbIc5YCQmMyh1GoBwTL4Ug==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOLH/1g0D8Umc/wySJch6SgAAAAACAAAAAAAQZgAAAAEAACAAAABGWrRYljeKBAQX51nm24LqwGGEeRxNJ+U014hVLoThsgAAAAAOgAAAAAIAACAAAADjpEeDLG8+ZCJz5zBqe0XTaFNkrBeiAh7xaLM37KkIapAAAACT7aJBnoO1KdZK8TesCTVbio6iNyfWPSqbLfW/XNFQtj8D9AY/736VuAoi3wOMOX9E3vi6VKvgEsKTM8Wcd7/qXTdNp17YjOhDqtHIobrZxa9cAmKyUOJuwz7/oYUuqkWwvHG9JEYf1GG3+Da29RCmu61cawX7NDidMSSfz/Xvsh1/UCm/e+T37HIveQnFOxZAAAAAItEREzFIWBGrvAya8NvqhIu6YXdEToae9mXP5vv9oAwqsitilV55xJH1ImOD9iJFPxti1gSkYl2rh3keg7n4MA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="MiPrimerHelloWorld.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="HelloWorldConVariable.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="ControlFlow.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="FelizDia.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="LocalHost.AdventureWorks2014.conmgr" />
@@ -169,16 +170,48 @@
                 <SSIS:Property SSIS:Name="Name">ControlFlow</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6735D642-4CBD-41F6-A38C-26D87BD0B8FA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8A500EDD-24BB-47E1-8D34-BDB448575D9A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="FelizDia.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{C6CDD99D-BA3A-4D91-BD51-4206A78D8CA3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">FelizDia</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{979700E5-D525-4AA5-90EF-5D3F87F9F91E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="Fecha">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{8B534E4B-5FA1-4A3E-A7D8-770B67AF5726}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">2017-04-06T19:56:00</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">16</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
